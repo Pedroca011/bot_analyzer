@@ -10,7 +10,9 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: '*',
+  origin: process.env.NODE_ENV === 'production' 
+    ? ['https://botanalyzer.netlify.app', process.env.FRONTEND_URL]
+    : '*',
   methods: ['GET', 'POST'],
   credentials: true
 }));
