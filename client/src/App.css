@@ -404,3 +404,102 @@
   animation: spin 1s linear infinite;
 }
 
+@media (max-width: 768px) {
+  .app {
+    padding: 20px 16px;
+  }
+
+  .hero {
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    padding: 0 16px;
+  }
+
+  .editor-wrapper {
+    max-width: 100%;
+  }
+
+  .code-editor {
+    font-size: 13px;
+    padding: 16px;
+  }
+
+  .btn-analyze {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .results {
+    padding: 40px 0;
+  }
+
+  .results h2 {
+    font-size: 1.75rem;
+  }
+
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-card {
+    padding: 20px;
+  }
+
+  .stats-footer {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .learning-bar {
+    padding: 12px 16px;
+  }
+
+  .theme-toggle {
+    top: 16px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    font-size: 0.875rem;
+  }
+
+  .code-editor {
+    height: 120px;
+    font-size: 12px;
+  }
+
+  .results h2 {
+    font-size: 1.5rem;
+  }
+
+  .stats-footer {
+    gap: 16px;
+  }
+
+  .stat-value {
+    font-size: 1.25rem;
+  }
+
+  .stat-label {
+    font-size: 0.6875rem;
+  }
+}
