@@ -7,7 +7,7 @@
 
 ## Preview
 
-<img src="/public/preview/2026-01-07-180656_hyprshot.png" alt="Preview"/>
+<img src="client/public/preview/2026-01-07-180656_hyprshot.png" alt="Preview"/>
 
 ## Features
 
@@ -48,21 +48,21 @@ Acesse: **[botanalyzer.netlify.app](https://botanalyzer.netlify.app)**
 
 ### Backend
 
-\`\`\`bash
+```bash
 cd server
 npm install
 cp .env.example .env
 # Adicione sua GEMINI_API_KEY no .env
 npm run dev
-\`\`\`
+```
 
 ### Frontend
 
-\`\`\`bash
+```bash
 cd client
 npm install
 npm run dev
-\`\`\`
+```
 
 ## Funcionalidades Principais
 
@@ -92,12 +92,12 @@ GEMINI_API_KEY=sua_chave_aqui
 PORT=3001
 NODE_ENV=production
 FRONTEND_URL=https://seu-frontend.netlify.app
-\`\`\`
+```
 
 ### Frontend (.env.local)
-\`\`\`
+```
 VITE_API_URL=https://seu-backend.onrender.com
-\`\`\`
+```
 
 ## Contribuindo
 
@@ -116,4 +116,4 @@ MIT
 
 ---
 
-Se ente projeto te ajudou, deixe uma estrela ⭐
+Se este projeto te ajudou, deixe uma estrela ⭐
