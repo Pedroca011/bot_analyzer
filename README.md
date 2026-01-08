@@ -113,7 +113,7 @@ MIT
 
 **Felipe Alves**
 
-- LinkedIn: [https://www.linkedin.com/in/felipe-allves/]
+- LinkedIn: [Felipe Allves](https://www.linkedin.com/in/felipe-allves/)
 - Github: [@felipe-allves](https://github.com/felipe-allves)
 
 ---
