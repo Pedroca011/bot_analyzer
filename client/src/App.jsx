@@ -121,6 +121,7 @@ function App() {
             onChange={(e) => setCode(e.target.value)}
             placeholder="Cole seu código JavaScript aqui..."
             spellCheck={false}
+            
           />
           
           <button 
