@@ -1,0 +1,9 @@
+.error-message {
+    padding: 18px 24px;
+    background: var(--error-bg);
+    border: 1px solid var(--error-border);
+    border-radius: 10px;
+    color: var(--error-text);
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
