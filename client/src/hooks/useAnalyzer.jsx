@@ -23,6 +23,7 @@ export const AnalyzerProvider = ({ children }) => {
   const [newBadges, setNewBadges] = useState([])
   const [learningData, setLearningData] = useState(analyzeLearning())
   const [theme, setThemeState] = useState(getTheme())
+  const [language, setLanguage] = useState('javascript')
   const resultsRef = useRef(null)
 
   const handleThemeToggle = () => {
@@ -40,7 +41,7 @@ export const AnalyzerProvider = ({ children }) => {
     setError(null)
     setAnalysis(null)
     setNewBadges([])
-    console.log(code, "[ANTES DE IR API]")
+    console.log(code, language, '[ANTES DE IR API]')
     try {
       const response = await fetch(`${API_URL}/api/analyzer/analyze`, {
         method: 'POST',
@@ -48,12 +49,13 @@ export const AnalyzerProvider = ({ children }) => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          code: code
+          code: code,
+          language: language
         })
       })
 
       const data = await response.json()
-      console.log(data, "[Cheguei da api]")
+      console.log(data, '[Cheguei da api]')
 
       if (!response.ok) {
         throw new Error(data.error || 'Erro ao analisar')
@@ -106,7 +108,9 @@ export const AnalyzerProvider = ({ children }) => {
         handleAnalyze,
         resultsRef,
         theme,
-        handleThemeToggle
+        handleThemeToggle,
+        language,
+        setLanguage
       }}
     >
       {children}

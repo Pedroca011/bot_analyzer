@@ -84,6 +84,13 @@
   cursor: not-allowed;
 }
 
+.container-language-buttonAnalyzer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media (max-width: 768px) {
   .editor-wrapper {
     max-width: 100%;
