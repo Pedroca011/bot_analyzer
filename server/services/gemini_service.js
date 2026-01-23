@@ -2,7 +2,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
   }
 
-async function analyzer_code(code) {
+async function analyzer_code(code, language) {
 
     const api_key = process.env.GEMINI_API_KEY
 
@@ -12,7 +12,7 @@ async function analyzer_code(code) {
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${api_key}`
 
-    const prompt = `Você é um mentor especializado em JavaScript. Analise o seguinte código COM CUIDADO:
+    const prompt = `Você é um mentor especializado em ${language}. Analise o seguinte código COM CUIDADO:
 
 CÓDIGO:
 ${code}
